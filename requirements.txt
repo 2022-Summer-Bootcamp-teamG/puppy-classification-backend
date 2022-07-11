@@ -1,0 +1,8 @@
+flask==1.1.2
+flask-Cors
+flask-Migrate
+SQLAlchemy==1.4.15
+mysql-connector-python==8.0.25
+
+### 패키지 관리 
+#### 이후에 pip install -r requirements.txt 로 필요한 전체 모듈 설치
