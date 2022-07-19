@@ -24,6 +24,11 @@ def create_app():
     # 플라스크 앱에 등록하기
     app.register_blueprint(routes, url_prefix='/')
 
+    # Home
+    @app.route('/')
+    def index():
+        return "Welcome!"
+
     return app
 
 
