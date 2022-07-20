@@ -29,6 +29,15 @@ def create_app():
     def index():
         return "Welcome!"
 
+    @app.route('/predict', methods=['POST'])
+    def post():
+        if request.method == 'POST':
+            try:
+                file = request.files['file']
+                return predict_breed(file)
+            except:
+                abort(500, "Something wrong")
+
     return app
 
 
