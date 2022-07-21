@@ -249,3 +249,8 @@ fabric.properties
 #SQLite DB, migrations
 puppy.db
 migrations
+config/connection.py
+
+config/rdsConfig.py
+
+config/s3Config.py
